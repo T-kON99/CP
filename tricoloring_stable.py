@@ -97,7 +97,7 @@ cache = {}
 
 
 def recurse(sumR: int, sumG: int, sumB: int, curAns: str, restArr: list) -> str:
-    key = (sumR, sumG, sumB, "".join(str(i) for i in restArr))
+    key = (sumR, sumG, sumB, ",".join(str(i) for i in restArr))
     if key in cache:
         # print(key, cache[key])
         return cache[key]
